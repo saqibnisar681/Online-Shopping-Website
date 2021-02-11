@@ -79,13 +79,12 @@ WSGI_APPLICATION = 'ecomm.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE' : 'django.db.backends.postgresql_psycopg2'
-        # 'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'ecomm',
-        'USER': 'root',
-        'PASSWORD': 'Root123',
-        'HOST': 'localhost',
-        'PORT': '3306',
+        'ENGINE' : 'django.db.backends.postgresql_psycopg2',
+        # 'NAME': 'ecomm',
+        # 'USER': 'root',
+        # 'PASSWORD': 'Root123',
+        # 'HOST': 'localhost',
+        # 'PORT': '3306',
     }
 }
 
