@@ -25,7 +25,7 @@ SECRET_KEY = 'r-!99)apep6kde7+%(-nxb+^&lx=8e8(@=t_y80xfr9f&d+^q#'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['https://sdrawkcab.herokuapp.com']
+ALLOWED_HOSTS = ['sdrawkcab.herokuapp.com']
 
 
 # Application definition
@@ -79,7 +79,8 @@ WSGI_APPLICATION = 'ecomm.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysql',
+        'ENGINE' : 'django.db.backends.postgresql_psycopg2'
+        # 'ENGINE': 'django.db.backends.mysql',
         'NAME': 'ecomm',
         'USER': 'root',
         'PASSWORD': 'Root123',
