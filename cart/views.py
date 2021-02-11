@@ -1,5 +1,7 @@
-from django.shortcuts import render
+from django.shortcuts import render,redirect
 from online_shopping.models import product,cart
+from django.urls import reverse
+from django.http import HttpResponseRedirect
 
 # Create your views here.
 def finalcart(request):
@@ -15,3 +17,15 @@ def finalcart(request):
 
 def invoice(request):
     return render(request,'Modified_files/invoice.html')
+
+def dele(request,id):
+    c = product.objects.get(pk=id)
+    data = cart.objects.filter(prd_id = c,user_id = request.user.id).delete()
+    # return redirect(reverse('cart:finalcart'))
+    return HttpResponseRedirect(self.request.META.get('HTTP_REFERER'))
+    # c = cart.objects.get(pk=id)
+    # data = cart.objects.create(prd_id = c,user_id = request.user.id) delete
+    # return redirect(data)
+
+def index(request):
+    return redirect('/')
