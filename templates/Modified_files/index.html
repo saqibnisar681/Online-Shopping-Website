@@ -82,11 +82,11 @@
                             <!--{% static 'search/search_prd.js' %}-->
                             <div class="col-lg-auto text-center text-lg-left header-item-holder">
                                 <a href="#" class="header-item">
-                                    <i class="fas fa-heart mr-2"></i><span id="header-favorite">0</span>
+                                    <i class="fas fa-heart mr-2"></i><span id="header-favorite"></span>
                                 </a>
                                 <a href="cart/cart" class="header-item">
-                                    <i class="fas fa-shopping-bag mr-2"></i><span id="header-qty" class="mr-3">2</span>
-                                    <i class="fas fa-money-bill-wave mr-2"></i><span id="header-price">$4,000</span>
+                                    <i class="fas fa-shopping-bag mr-2"></i><span id="header-qty" class="mr-3"></span>
+                                    <i class="fas fa-money-bill-wave mr-2"></i><span id="header-price"></span>
                                 </a>
                             </div>
                         </div>
@@ -100,19 +100,16 @@
                                 <div class="collapse navbar-collapse" id="mainNav">
                                     <ul class="navbar-nav mx-auto mt-2 mt-lg-0">
                                         <li class="nav-item active">
-                                            <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                                            <a href="" class="nav-link" >Home <span class="sr-only">(current)</span></a>
                                         </li>
                                         <li class="nav-item dropdown">
                                             <a class="nav-link dropdown-toggle" href="#" id="electronics" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Electronics</a>
                                             <div class="dropdown-menu" aria-labelledby="electronics">
-                                                <a class="dropdown-item" href=" {% static 'category.html' %} ">Computers</a>
-                                                <a class="dropdown-item" href=" {% static 'category.html' %} ">Mobile Phones</a>
-                                                <a class="dropdown-item" href=" {% static 'category.html' %} ">Television Sets</a>
-                                                <a class="dropdown-item" href=" {% static 'category.html' %} ">DSLR Cameras</a>
-                                                <a class="dropdown-item" href=" {% static 'category.html' %} ">Projectors</a>
-                                            </div>
+                                                <button onclick="location.href= '/list_prd/laptop'" class="dropdown-item">Laptop</button>
+                                                <button onclick="location.href= '/list_prd/mobile'" class="dropdown-item">Mobile Phones</button>
+                                                <button onclick="location.href= '/list_prd/dslr'" class="dropdown-item">DSLR</button>                                                <a class="dropdown-item" href=" {% static 'category.html' %} ">DSLR Cameras</a>                                            </div>
                                         </li>
-                                        <li class="nav-item dropdown">
+                                        <!-- <li class="nav-item dropdown">
                                             <a class="nav-link dropdown-toggle" href="#" id="fashion" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Fashion</a>
                                             <div class="dropdown-menu" aria-labelledby="fashion">
                                                 <a class="dropdown-item" href="category.html">Men's</a>
@@ -131,7 +128,8 @@
                                                 <a class="dropdown-item" href="category.html">Children's</a>
                                                 <a class="dropdown-item" href="category.html">Non-Fiction</a>
                                             </div>
-                                        </li>
+                                        </li> -->
+                                    
                                     </ul>
                                 </div>
                             </nav>
@@ -197,12 +195,12 @@
                                         <div class="col-12 bg-white text-center h-100 product-item">
                                             <div  class="row h-100">
                                                 <div class="col-12 p-0 mb-3">
-                                                    <a href=" {% static 'product.html' %} ">
+                                                    
                                                         <img src="{{prd.img.url}}" class="img-fluid">
-                                                    </a>
+                                                    
                                                 </div>
                                                 <div class="col-12 mb-3">
-                                                    <a href=" {% static 'product.html' %} " class="product-name">{{prd.name}}</a>
+                                                    <div class="product-name">{{prd.name}}</div>
                                                 </div>
                                                 <div class="col-12 mb-3">
                                                     <span class="product-price">

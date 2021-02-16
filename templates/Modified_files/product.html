@@ -38,7 +38,7 @@
                             <div class="col-auto">
                                 {% if user.is_authenticated %}
                                 <ul class="top-nav">
-                                    <li><i class="fas fa-user-edit mr-2"></i>{{user.first_name}}</li>
+                                    <li style = "color:aliceblue"><i class="fas fa-user-edit mr-2"></i>{{user.first_name}}</li>
                                     <li>
                                         <a href="accounts/logout"><i class="fas fa-user-edit mr-2"></i>Logout</a>
                                     </li>
@@ -63,7 +63,7 @@
                         <div class="row">
                             <div class="col-lg-auto">
                                 <div class="site-logo text-center text-lg-left">
-                                    <a href=" {% static 'index.html' %} ">E-Commerce</a>
+                                    <a href="index">E-Commerce</a>
                                 </div>
                             </div>
                             <div class="col-lg-5 mx-auto mt-4 mt-lg-0">
@@ -80,11 +80,11 @@
                             </div>
                             <div class="col-lg-auto text-center text-lg-left header-item-holder">
                                 <a href="#" class="header-item">
-                                    <i class="fas fa-heart mr-2"></i><span id="header-favorite">0</span>
+                                    <i class="fas fa-heart mr-2"></i><span id="header-favorite"></span>
                                 </a>
                                 <a href="#" class="header-item">
-                                    <i class="fas fa-shopping-bag mr-2"></i><span id="header-qty" class="mr-3">2</span>
-                                    <i class="fas fa-money-bill-wave mr-2"></i><span id="header-price">$4,000</span>
+                                    <i class="fas fa-shopping-bag mr-2"></i><span id="header-qty" class="mr-3"></span>
+                                    <i class="fas fa-money-bill-wave mr-2"></i><span id="header-price"></span>
                                 </a>
                             </div>
                         </div>
@@ -161,12 +161,12 @@
                                         <div class="col-12 bg-white text-center h-100 product-item">
                                             <div  class="row h-100">
                                                 <div class="col-12 p-0 mb-3">
-                                                    <a href=" {% static 'product.html' %} ">
+                                                    
                                                         <img src="{{result.img.url}}" class="img-fluid">
-                                                    </a>
+                                                    
                                                 </div>
                                                 <div class="col-12 mb-3">
-                                                    <a href=" {% static 'product.html' %} " class="product-name">{{result.name}}</a>
+                                                    <div class="product-name">{{result.name}}</div>
                                                 </div>
                                                 <div class="col-12 mb-3">
                                                     <span class="product-price">

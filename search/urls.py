@@ -5,4 +5,5 @@ from django.conf.urls.static import static
 
 urlpatterns = [
     path('searchalgo',views.searchalgo,name='searchalgo'),
+    path('index',views.index,name='index')
 ]
