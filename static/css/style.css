@@ -1,5 +1,5 @@
 body {
-    background-color: #eaeaea;
+    background-color:#eaeaea;
     font-family: 'Open Sans Condensed', sans-serif;
 }
 
@@ -7,6 +7,11 @@ a {
     transition: color .2s linear 0s;
 }
 
+/*#prd:hover {
+
+    color : aqua;
+
+}*/
 .top-nav {
     margin: 0;
     padding: 0;
@@ -87,16 +92,19 @@ a {
 
 .product-item {
     box-shadow: #ccc 0 0 10px 1px;
+   
 }
 
 .product-item:hover {
     box-shadow: #aaa 0 0 10px 1px;
+    box-decoration-break: clone;
 }
 
 .product-name {
     font-size: 1.2rem;
     font-weight: 600;
     color: #656565;
+    
 }
 
 .product-name.large {
@@ -196,6 +204,8 @@ a.product-name:hover, a.product-name:focus {
 .product-item:hover .new {
     left: 0;
     width: auto;
+    /*width: 25%;*/
+    background-color: aqua;
 }
 
 .large-holder {
@@ -363,6 +373,9 @@ table td, table th {
 table td img {
     max-height: 80px;
 }
+
+
+
 
 @media (max-width: 767.98px) {
 

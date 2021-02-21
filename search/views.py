@@ -5,7 +5,6 @@ from django.db.models import Q
 
 # Create your views here.
 def searchalgo(request):
-    print('nice')
     queru = None
     results = []
     if request.method == "GET":
